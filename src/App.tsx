@@ -1,4 +1,3 @@
-import React from 'react';
 import { FileUpload } from './components/FileUpload';
 import { PackageTable } from './components/PackageTable';
 import { PackageInfo } from './components/PackageInfo';
