@@ -1,3 +1,5 @@
+![Package Analyzer wireframe image](pkgjson-viz.png)
+
 # Purpose
 
 This sample app was created in support of my evolving portfolio of projects. For
