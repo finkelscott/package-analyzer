@@ -70,7 +70,7 @@ export const PackageInfo: React.FC<PackageInfoProps> = ({ packageJson, licenseDa
 
           <div>
             <div className="mb-2">
-              <p className="text-lg font-semibold text-center">License Distribution</p>
+              <p className="text-lg font-semibold text-center">License Composition</p>
             </div>
             <div className="w-full h-[250px]">
               <ResponsiveContainer width="100%" height="100%">
