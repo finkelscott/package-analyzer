@@ -14,8 +14,7 @@ export const usePackageData = () => {
     
     try {
       const allDependencies = {
-        ...packageJson.dependencies,
-        ...packageJson.devDependencies
+        ...packageJson.dependencies
       };
       
       const packagePromises = Object.entries(allDependencies).map(async ([name]) => {

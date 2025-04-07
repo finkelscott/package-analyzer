@@ -21,7 +21,6 @@ export interface PackageJson {
     url: string;
   };
   dependencies?: Record<string, string>;
-  devDependencies?: Record<string, string>;
 }
 
 export interface LicenseBreakdown {

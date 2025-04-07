@@ -35,7 +35,7 @@ export const PackageTable: React.FC<PackageTableProps> = ({ packages }) => {
 
   return (
     <div className="space-y-2">
-      <h2 className="text-xl font-semibold">Dependencies</h2>
+      <h2 className="text-xl font-semibold">Dependencies ({sortedPackages.length})</h2>
       <Table
         aria-label="Package dependencies table"
         className="w-full"

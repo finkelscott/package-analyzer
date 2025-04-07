@@ -1,8 +1,11 @@
 {
   "name": "package-analyzer",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
+  "author": "Scott J Finkel <scottjfinkel@gmail.com>",
+  "license": "MIT",
+  "description": "Analyze package.json for npm dependency data",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
