@@ -43,7 +43,7 @@ export default function App() {
         {!packages.length && (
         <div className="p-10 w-1/2 mx-auto">
           <FileUpload onFileLoad={handleFileLoad} />
-          <p className="text-md text-center text-blue-500 text-default-500 mt-8">
+          <p className="text-md text-center text-blue-500 mt-8">
             <a href="#" onClick={() => {
               handleFileLoad(exampleJson);
             }}>
