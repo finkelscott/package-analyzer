@@ -12,8 +12,27 @@ export default function App() {
     fetchPackageData(packageJson);
   };
 
+  const exampleJson = {
+  "name": "@shoelace-style/shoelace",
+  "description": "A forward-thinking library of web components.",
+  "version": "2.20.1",
+  "homepage": "https://github.com/shoelace-style/shoelace",
+  "author": "Cory LaViska",
+  "license": "MIT",
+  "dependencies": {
+    "@ctrl/tinycolor": "^4.1.0",
+    "@floating-ui/dom": "^1.6.12",
+    "@lit/react": "^1.0.6",
+    "@shoelace-style/animations": "^1.2.0",
+    "@shoelace-style/localize": "^3.2.1",
+    "composed-offset-position": "^0.0.6",
+    "lit": "^3.2.1",
+    "qr-creator": "^1.0.0"
+  }
+}
+
   return (
-    <div className="min-h-screen bg-background mb-8">
+    <div className="min-h-screen bg-background mb-8 pt-8">
       <div className="space-y-8">        
         <div className="fixed top-0 w-full z-10">
           <a href="/" className="bg-violet-700 p-3 flex gap-2 text-violet-50 text-2xl font-bold">
@@ -22,10 +41,17 @@ export default function App() {
         </div>
         
         {!packages.length && (
-          <div className="p-10 w-1/2 mx-auto">
-            <FileUpload onFileLoad={handleFileLoad} />
-          </div>
-        )}
+        <div className="p-10 w-1/2 mx-auto">
+          <FileUpload onFileLoad={handleFileLoad} />
+          <p className="text-md text-center text-blue-500 text-default-500 mt-8">
+            <a href="#" onClick={() => {
+              handleFileLoad(exampleJson);
+            }}>
+              Load example instead
+            </a>
+          </p>
+        </div>
+)}
 
         {loading && (
           <div className="flex justify-center p-8">
